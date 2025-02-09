@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Note styles */
+.note {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #ccc;
+  margin: 16px;
+  padding: 16px;
+  width: 300px;
+  text-align: left;
+  position: relative;
+}
+
+.note h1 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.note p {
+  margin-bottom: 16px;
+}
+
+.note button {
+  background: #f44336; /* Red background for the button */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px; /* Adjust padding as needed */
+  position: absolute; /* Position button at the bottom right */
+  bottom: 8px;
+  right: 8px;
+  font-size: 1em;
+  width: auto; /* Ensure width auto fits the text */
+  transition: background 0.3s, transform 0.2s; /* Add smooth transitions */
+}
+
+.note button:hover {
+  background: #e53935; /* Slightly darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.note .edit-button {
+  background: #007bff; /* Blue background for the edit button */
+}
+
+.note .edit-button:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+/* Additional styles for textarea and input fields */
+.note input,
+.note textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.note textarea {
+  resize: none; /* Prevent textarea from being resized */
+}
